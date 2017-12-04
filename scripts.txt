@@ -1,15 +1,14 @@
-
 # Question 2:
 
-Q. copy all files in a directory older than 1 week to another directory
+Q. Copy all files in a directory older than 1 week to another directory
 
 --> find /home/mike/Downloads/ -maxdepth 1 -mtime +7 -type f -exec mv {} /home/mike/test_bak/ \;
 
-where /home/mike/Downloads is Source directory and /home/mike/test_bak is the Destination directory.
+where /home/mike/Downloads is Source directory and /home/mike/test_bak is the Destination directory
 
 
-Q. given a directory of files, appends the timestamp of when the file was created to the files name
+Q. Given a directory of files, appends the timestamp of when the file was created to the files name
 
 --> touch testfile_$(date -d "today" +"%Y%m%d%H%M").txt
 
-Actually, this is just the way how I can append the timestamp to the filename when it gets created, I found it difficult to find the way to attach the past timestamps of when the files were created in Linux environment.
+Actually, this is just the way how I can append the timestamp to the filename when it gets created, I found it difficult to find the way to attach the past timestamps of when the files were created in Linux environment.(As I was not able to get the file creation time by using stat cmd)
