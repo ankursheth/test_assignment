@@ -1,4 +1,4 @@
-#script for the First Problem of Scripting Option
+# script for the First Problem of Scripting Option
 
 #!/bin/bash
 
