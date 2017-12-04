@@ -1,3 +1,5 @@
+# script for the Second Problem of Scripting Option
+
 #!/bin/bash
 
 # If less than two parameters are provided to the shell script, give an error message
@@ -12,9 +14,8 @@ fi
 input_dir=$1
 output_dir=$2
 
-echo ${input_dir}
-echo ${output_dir}
-
+# echo ${input_dir}
+# echo ${output_dir}
 
 # Finds the files older than 7 days in the input directory and copies them to output directory.
 find ${input_dir} -maxdepth 1 -mtime +7 -type f -exec cp {} ${output_dir} \;
